@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}">
+  <head>
+      <meta name="facebook-domain-verification" content="2ygmlz1oi4x1p62xtq2n2qpn4jovd5" />
+    <title>{{ head.title }}</title>
+    <meta name="google-site-verification" content="0jjaAzQovIYMvnA1GJRkpHcD6O97eG8FCo-NhluqwxA" />
+    {{{ head.meta_tags }}}
+    {{{ head.config }}}
+    {{#block "head"}} {{/block}}
+    <link href="{{ head.favicon }}" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google-site-verification" content="5W3ZVSgehqBIos1IzDGx5IE5aTZVYL1EyjzIH-U4tV8" />
+    <meta name="google-site-verification" content="3YK7IAwT6eneAy-wBN9O00R64kzSWzplWl4gKw9k7lQ" />
+    <script src="{{cdn '/assets/js/modernizr.js'}}"></script>
+
+    {{{stylesheet '/assets/css/theme.css'}}}
+    {{ getFontsCollection }}
+
+    {{{head.scripts}}} 
+    
+    {{{head.rsslinks}}}
+
+    {{inject 'themeImageSizes' theme_settings._images}}
+    {{> components/global-injects}}
+    {{{snippet 'html_head'}}}
+
+    {{> core/structured-data/website}}
+    
+  </head>
+
+  <body class="{{page_type}} {{> components/common/body-classes}}" itemscope itemtype="http://schema.org/WebPage">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59XKGGZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    {{#if page_type '===' 'product'}}
+      {{> components/common/facebook-like}}
+    {{else if page_type '===' 'blog_post'}}
+      {{> components/common/facebook-like}}
+    {{/if}}
+
+    <div class="icons-svg-sprite">{{> components/common/icons/icon-defs}}</div>
+    <div class="site-wrapper">
+      {{{snippet 'header'}}}
+      {{> components/header/header}}
+
+      {{> components/common/banner-top}}
+
+      <main class="main-content">
+        {{#block "page"}}{{/block}}
+      </main>
+
+      {{> components/footer/footer }}
+
+      {{> components/header/navigation-mobile}}
+    </div> <!-- /site-wrapper -->
+
+    {{> core/structured-data/breadcrumbs}}
+
+    <script>
+      function startupApp(stencilBootstrap) {
+        stencilBootstrap("{{template_file}}", {{jsContext}}).load();
+      }
+    </script>
+
+    {{#if in_production}}
+      <script src="{{cdn '/assets/js/bundle.js'}}"></script>
+      <script>
+          startupApp(stencilBootstrap);
+      </script>
+    {{else}}
+      <script src="{{cdn '/assets/jspm_packages/system.js'}}"></script>
+      <script src="{{cdn '/assets/config.js'}}"></script>
+      <script src="{{cdn '/assets/js/dependency-bundle.js'}}"></script>
+      <script>
+          System.import("js/app").then(function(){ startupApp(stencilBootstrap)});
+      </script>
+    {{/if}}
+    {{{footer.scripts}}}
+    {{{snippet 'footer'}}}
+  </body>
+</html>

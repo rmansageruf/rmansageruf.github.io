@@ -1,0 +1,21 @@
+.body {
+	margin-left: auto;
+	margin-right: auto;
+
+	
+	@include breakpoint("large") {
+		max-width: $emthemesModez-body-max-large;
+
+		.layout-fluid & {
+			max-width: none;
+		}
+	}
+
+	@include breakpoint("xxlarge") {
+		max-width: $emthemesModez-body-max-xxlarge;
+
+		.layout-fluid & {
+			max-width: none;
+		}
+	}
+}

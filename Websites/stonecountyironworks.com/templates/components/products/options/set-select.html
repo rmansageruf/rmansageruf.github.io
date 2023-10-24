@@ -1,0 +1,15 @@
+
+<div class="form-field {{#if required }}required{{/if}}" data-product-attribute="set-select">
+  <label class="form-label">
+    <div class="form-label-text product-option-title">
+      {{display_name}}
+    </div>
+    <div class="form-select-wrapper">
+      <select name="attribute[{{id}}]" class="form-input form-select">
+        {{#each values}}
+          <option value="{{id}}" {{#if selected}}selected{{/if}} data-product-attribute-value="{{id}}">{{label}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </label>
+</div>

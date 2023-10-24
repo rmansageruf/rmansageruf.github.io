@@ -1,0 +1,16 @@
+{{#partial "hero"}}
+    {{> components/emthemes-modez/sections/section section='slideshow'}}
+    {{{snippet 'home_content'}}}
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{#each shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+<div class="main full">
+    {{> components/emthemes-modez/home/default}}
+</div>
+{{/partial}}
+{{> layout/base}}

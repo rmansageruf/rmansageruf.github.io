@@ -1,0 +1,45 @@
+.sale-flag-side {
+	font-size: fontSize("smallest");
+	font-weight: fontWeight("normal");
+	text-transform: uppercase;
+	border-radius: 0;
+	line-height: lineHeight("base");
+	height: auto;
+	padding: spacing("eighth") spacing("half");
+	left: spacing("half");
+	top: spacing("half");
+
+	&:after {
+		$n: lineHeight("base") * fontSize("smallest") / 2 + 2px; // TODO 2px = spacing("eighth");
+		content: ' ';
+		font-size: 0;
+		border-left: $n solid stencilColor("color_badge_product_sale_badges");
+		border-top: $n solid transparent;
+		border-bottom: $n solid transparent;
+		position: absolute;
+		top: 0;
+		right: -($n - 0.5px);
+	}
+
+	+ .sale-flag-side {
+		top: spacing("half") + lineHeight("base") + spacing("eighth") * 2 + spacing("quarter");
+	}
+
+	.productView-images & {
+		left: spacing("half") + spacing("base");
+	}
+}
+
+.sale-flag-side--custom {
+	background-color: stencilColor("color_badge_product_sale_badges_alt");
+
+	&:after {
+		border-left-color: stencilColor("color_badge_product_sale_badges_alt");
+	}
+
+
+	.product:hover & {
+	    background-color: stencilColor("color_badge_product_sale_badges_alt");
+	}
+}
+

@@ -1,0 +1,31 @@
+.productView-title {
+	font-family: stencilFontFamily("altHeadings-font");
+}
+
+.productView-images {
+	position: relative;
+}
+
+.productView-image {
+	min-width: auto;
+	min-height: auto;
+}
+
+.productView-brand a {
+	text-decoration: none;
+}
+
+.productView-options {
+	margin-top: spacing("single");
+
+	.form-field.hide {
+		position: absolute;
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+}
+
+.productView-description {
+	.tabs-contents {
+		margin-bottom: 0;
+	}
+}

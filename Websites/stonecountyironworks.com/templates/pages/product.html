@@ -1,0 +1,104 @@
+---
+product:
+  reviews:
+    limit: {{theme_settings.product-single-reviews-count}}
+  videos:
+    limit: {{theme_settings.product-single-videos-count}}
+  related_products:
+    limit: {{theme_settings.product-single-related-count}}
+brands: true
+---
+
+{{#partial "page"}}
+
+  <header class="page-header">
+    <div class="section-title">
+      {{> components/common/breadcrumbs breadcrumbs}}
+    </div>
+  </header>
+
+  {{> components/products/product-single-details}}
+  {{> components/products/product-single-tabs}}
+
+  {{#if product.related_products.length}}
+    <section class="products-featured section">
+      <div class="container">
+        <h3 class="section-title">{{lang 'product.related_products_heading'}}</h3>
+        <div class="product-grid">
+          {{#each product.related_products}}
+            {{> components/products/product-grid-item show_rating=../settings.show_product_rating}}
+          {{/each}}
+        </div>
+      </div>
+    </section>
+  {{/if}}
+
+  {{> core/structured-data/product}}
+  {{> core/structured-data/product-reviews}}
+
+{{/partial}}
+
+{{> layout/base}}
+
+<script>
+  var dataLayer = window.dataLayer || [];
+
+  {{#if page_type '===' 'product'}}
+    dataLayer.push({
+      'event': 'view_items',
+      'ecommerce': {
+        'currency': '{{currency_selector.active_currency_code}}',
+        'items': [
+            {
+              'item_id': '{{#if product.sku}}{{product.sku}}{{else}}{{product.id}}{{/if}}',
+              'item_name': '{{product.title}}',
+              'item_category ': [
+                {{#each product.category}}
+                '{{this}}',
+                {{/each}}
+              ],
+              'price': {{#or customer (unless theme_settings.restrict_to_login)}}{{#if product.price.with_tax}}parseFloat({{product.price.with_tax.value}}){{else}}parseFloat({{product.price.without_tax.value}}){{/if}}{{else}}'{{lang 'common.login_for_pricing'}}'{{/or}},
+              'quantity': parseInt('{{forms.cart.quantity}}'),
+              'discount': parseFloat({{product.price.saved.value}})
+            }
+          ]
+        }
+      
+    });
+  {{/if}}
+  
+  </script>
+
+
+  <script>
+{{#if page_type '===' 'product'}}
+    window.stencilUtils.hooks.on('cart-item-add', function(data) {
+      var productData = {
+        'event': 'add_to_carts',
+        'ecommerce': {
+          'value': {{#or customer (unless theme_settings.restrict_to_login)}}{{#if product.price.with_tax}}parseFloat({{product.price.with_tax.value}}){{else}}parseFloat({{product.price.without_tax.value}}){{/if}}{{else}}'{{lang 'common.login_for_pricing'}}'{{/or}} * parseInt('{{forms.cart.quantity}}'),
+          'currency': '{{currency_selector.active_currency_code}}',
+          'items': [
+              {
+                'item_id': '{{#if product.sku}}{{product.sku}}{{else}}{{product.id}}{{/if}}',
+                'item_name': '{{product.title}}',
+                'brand': '{{product.brand.name}}',
+                'item_category': [
+                  {{#each product.category}}
+                  '{{this}}',
+                  {{/each}}
+                ],
+                'price': {{#or customer (unless theme_settings.restrict_to_login)}}{{#if product.price.with_tax}}parseFloat({{product.price.with_tax.value}}){{else}}parseFloat({{product.price.without_tax.value}}){{/if}}{{else}}'{{lang 'common.login_for_pricing'}}'{{/or}},
+                'quantity': parseInt('{{forms.cart.quantity}}'),
+                'discount': parseFloat('{{product.price.saved.value}}')
+              }
+            ]
+          }
+        };
+      
+      window.dataLayer.push(productData);
+    });
+  {{/if}}
+</script>
+
+

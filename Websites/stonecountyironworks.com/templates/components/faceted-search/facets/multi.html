@@ -1,0 +1,19 @@
+<ul class="facet-list-items {{#if selected}}is-open{{/if}} {{#unless start_collapsed}}is-open{{/unless}} {{#if items_count '<' total_items}}has-additional-filters{{/if}}" data-count="{{items_count}}" data-facet-filter-wrapper>
+  {{#each items}}
+    <li class="facet-item {{#if @index '>=' 5}}hidden{{/if}} {{#if selected}}selected-facet{{/if}}" data-facet-item>
+      <a href="{{url}}" rel="nofollow" data-faceted-search-facet>
+        {{title}}
+        {{#if ../show_product_counts}}<span class="facet-item-count" data-facet-item-count>({{count}})</span>{{/if}}
+      </a>
+    </li>
+  {{/each}}
+
+  {{#if total_items ">" 5}}
+    <li>
+      <a class="facet-toggle-more" href="#" data-facet-more>
+        {{lang 'faceted_search.show_more'}}
+        <svg class="icon icon-arrow-down"><use xlink:href="#icon-arrow-down" /></svg>
+      </a>
+    </li>
+  {{/if}}
+</ul>

@@ -1,0 +1,1393 @@
+// ============================================================================
+// ADD YOUR OWN CSS / SCSS CUSTOMIZATION CODE HERE
+// ============================================================================
+//
+// Note:
+// - Copy / Backup this file if you upgrade the theme
+//
+// ----------------------------------------------------------------------------
+
+// Below code removes 'leaves' background image on banners
+// Uncomment to apply
+// ----------------------------------------------------------------------------
+// .emthemesModez-banner--laparis1:first-child .emthemesModez-banner-figcaption {
+//   background-image: none;
+// }
+
+// Below code removes background image on the featured products block
+// Uncomment to apply
+// ----------------------------------------------------------------------------
+// .emthemesModez-productsVerticalCategoriesAside-outer--1 {
+//   background-image: none;
+// }
+
+body {
+    padding-top: remCalc(130);
+    &.page-default {
+        padding-top: remCalc(45);
+    }
+}
+
+.body {
+    max-width: inherit;
+    margin: 0;
+}
+
+.main .full {
+    margin: 0 7% 0 7% !important;
+}
+
+.container {
+    padding: 0 $container-padding;
+}
+
+ .breadcrumb {
+	text-transform: uppercase;
+	margin: spacing("single") 0;
+}
+
+
+.previewCartItem {
+    background-color: #ffffff;
+}
+
+.previewCartAction {
+    background-color: #e8e8e8;
+}
+
+.previewCartAction .button {
+    height: 35px;
+}
+
+.countPill .navUser-item--cart .navUser-action {
+    padding-top: 10px !important;
+}
+
+.countPill {
+    height: 13px;
+    width: 13px;
+    line-height: 0.5;
+    background-color: #d49f72;
+    padding-top: 4px !important;
+    font-size: 10px;
+    float: right !important;
+}
+
+.navUser .dropdown-menu {
+    background-color: #ffffff;
+}
+
+a:focus {
+    color: #d49f72 !important;
+}
+
+.dropdown--quickSearch.is-open {
+    top: -8px !important;
+    width: 350px !important;
+    left: auto !important;
+    padding: 25px;
+}
+
+.quickSearchResults {
+    display: none !important;
+}
+
+.paddingtop {
+    margin-top: 320px;
+}
+
+#s-f9688439-c98d-4e90-aeae-84ea440a4114,
+#s-62575a73-147e-42e7-ad93-a8863a42bfb0,
+#s-bbe1dc87-05ef-43e3-8099-941263e075e9,
+#s-62c6b6cd-a4e2-4c34-896b-12a42a7d09b2,
+#s-0e7cb13f-6f4e-4757-9758-fd25d5d37129 {
+    position: relative;
+}
+
+.shogun-image-container {
+    z-index: -1;
+}
+
+#video-wrap {
+    float: left;
+    margin: 0 30px 15px 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .heroCarousel-slide {
+        top: 0px;
+    }
+
+    body.emthemesModez-productUniform  .pace-done {
+        padding-top: 0px !important;
+    }
+    
+    .heroCarousel .slick-next, .heroCarousel .slick-prev {
+        display: none !important;
+    }
+
+    .heroCarousel {
+        .slick-dots {
+            bottom: 0;
+            padding-top: 14px;
+            padding-bottom: 14px !important;
+            
+        }
+    }
+
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 1440px) {
+    .heroCarousel-title {
+        opacity: 1;
+        font-size: 36px;
+        line-height: 1;
+        font-family: Montserrat,Arial,Helvetica,sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #ffffff;
+        position: initial;
+    }
+
+    .heroCarousel-description {
+        font-size: 36px;
+        line-height: 1.1;
+        font-family: Montserrat,Arial,Helvetica,sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #ffffff;
+        position: initial;
+        /*padding-bottom: 20px;*/
+        text-shadow: 2px 2px 4px #000000;
+    }
+    
+    .heroCarousel-action {
+        position: initial;
+    
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .productView {
+        margin-top: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .productView {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 800px) {
+    .productView {
+        margin-top: 0px !important;
+    }
+}
+
+
+
+
+///------------------------------------------------------------------
+//// TABLET BEGINS
+
+
+@media only screen and (min-width: 550px) and (max-width: 1080px) {
+    .emthemesModez-banner-figure {
+        width: 110% !important;
+    }
+
+    .emthemesModez-banner--laparis3:first-child .emthemesModez-banner-figcaption {
+        max-width: 95% !important;
+        bottom: 0px !important;
+        height: 55% !important;
+    }
+
+    .emthemesModez-banner--laparis3 .emthemesModez-banner-image {
+        width: auto;
+        height: 100%;
+        object-fit: cover !important;
+    }
+}
+
+
+
+//// TABLET ENDS
+///------------------------------------------------------------------
+
+@media only screen and (min-width: 1261px) {
+    .footer-info-col {
+        width: 25%;
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+    .navPages {
+        text-align: left;
+    }
+
+    .navPages-list {
+        text-align: left !important;
+        margin-right: 10px;
+    }
+}
+
+
+
+a.navPages-action{
+    color: #FFFFFF;
+}
+
+// Full Width Header Settings (1400+Wide)
+// ----------------------------------------------------------------------------
+
+.navUser--left {
+    position: fixed;
+    top: 0;
+    right: 6%;
+}
+
+.navUser--right {
+    position: fixed;
+    top: 0;
+    right: 8%;
+}
+
+.navUser ol, .navUser ul {
+    background-color: #807973;
+    height: 45px;
+}
+
+.navUser-action--contact {
+    padding-top: 1.3rem;
+}
+
+.emthemesModez-header-userSection--logo-left:hover, .emthemesModez-header-userSection--logo-left:focus-within {
+    background: rgba(33,30,29,1) !important;
+    transition: ease 0.6s;
+}
+
+.emthemesModez-header-userSection--logo-center {
+    background: rgba(33,30,29,0.95);
+    height: 145px;
+}
+
+.emthemesModez-header-topSection {
+    font-style: italic;
+    text-align: center;
+    color: #fdf9f9;
+}
+
+.navPages {
+    text-align: right;
+}
+
+
+.navPages-list {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.navPages .navPages--align-center {
+    text-align: left;
+}
+
+.navPage-subMenu-item {
+    width: auto;
+}
+
+
+[class*=" emthemesModez-icon-"], [class^=emthemesModez-icon-] {
+    line-height: 0.5;
+}
+
+.navUser-action:hover, .navUser-action.is-open {
+    color: #d49f72;
+    transition: ease 0.6s;
+}
+
+.navUser-item--cart .navUser-action:hover {
+    color: #d49f72;
+}
+
+.navUser-item--cart .navUser-action.is-open {
+    color: #ffffff;
+}
+
+
+.navPages-action {
+    font-size: 0.92rem;
+    padding: 0.95rem;
+}
+
+.navPages-action.is-open {
+    font-size: 0.92rem;
+    background-color: transparent;
+}
+
+.navPage-subMenu-item>.navPage-subMenu-action {
+    font-size:  0.99rem;
+    color: #d49f72;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 0.5;
+    margin-bottom: 0px;
+    border: 0;
+    background-color: transparent;
+    padding-top: 2rem !important;
+}
+
+.navPage-subMenu-item:hover>.navPage-subMenu-action:hover, .navPage-subMenu-item:active>.navPage-subMenu-action:active {
+    font-size:  0.99rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 0.5;
+    margin-bottom: 0px;
+}
+
+.banners {
+    display: none;
+    position: relative;
+    top: 0px;
+    z-index: 10;
+}
+
+.maintenanceNotice {
+    display: none;
+}
+
+body {
+    background: linear-gradient( #fdf9f9, #ffffff);
+}
+
+.navPage-subMenu-item {
+    margin-top: -12px !important;
+}
+
+.navPages-item:hover {
+    background-color: #4e4745;
+}
+
+.navPages-item:focus .navPages-action.is-open, .navPages-item:hover .navPages-action.is-open {
+    background-color: transparent;
+}
+
+// HEADER CAROUSEL BEGINS
+// ----------------------------------------------------------------------------
+
+.heroCarousel {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    .slick-track {
+        display: flex;
+    }
+}
+
+.heroCarousel-content {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+
+    @include breakpoint("medium") {
+        top: 50%;
+        width: 90%;
+    }
+
+    @include breakpoint("xlarge") {
+        width: 85%;
+    }
+}
+
+.heroCarousel-image {
+    visibility: hidden;
+
+    @media only screen and (max-width: 801px) {
+        height: 10rem;
+    }
+}
+
+.heroCarousel-slide {
+    position: relative;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 400px;
+    @include breakpoint("small") {
+        min-height: 530px;
+    }
+    @include breakpoint("medium") {
+        height: auto;
+        min-height: 0;
+    }
+}
+
+.heroCarousel .slick-next,
+.heroCarousel .slick-prev {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+@include breakpoint("large") {
+    .heroCarousel-slide {
+
+        .heroCarousel-title {
+            opacity: 1;
+            font-size: 36px;
+            line-height: 1;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .heroCarousel-description {
+            font-size: 36px!important;
+            line-height: 1.3;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        
+        
+    }
+    /*
+    .heroCarousel-slide--0 .heroCarousel-title,
+    .heroCarousel-slide--2 .heroCarousel-title,
+    .heroCarousel-slide--3 .heroCarousel-title,
+    .heroCarousel-slide--1 .heroCarousel-title,
+    .heroCarousel-slide--4 .heroCarousel-title {
+        opacity: 1;
+        font-size: 36px;
+        line-height: 1;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #ffffff;
+        position: absolute;
+        top: -255%;
+        right: 0;
+    }
+
+
+    .heroCarousel-slide--0 .heroCarousel-description,
+    .heroCarousel-slide--2 .heroCarousel-description,
+    .heroCarousel-slide--3 .heroCarousel-description,
+    .heroCarousel-slide--1 .heroCarousel-description,
+    .heroCarousel-slide--4 .heroCarousel-description {
+        font-size: 36px!important;
+        line-height: 1.3;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #ffffff;
+        position: absolute;
+        top: -208%;
+        right: 0;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .heroCarousel-slide--0 .heroCarousel-action,
+    .heroCarousel-slide--2 .heroCarousel-action,
+    .heroCarousel-slide--3 .heroCarousel-action,
+    .heroCarousel-slide--1 .heroCarousel-action,
+    .heroCarousel-slide--4 .heroCarousel-action {
+        position: absolute;
+        right: 0;
+        top: -160%;
+    }
+
+    .heroCarousel-slide--5 .heroCarousel-title {
+        opacity: 1;
+        font-size: 36px;
+        line-height: 1;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #ffffff;
+        position: absolute;
+        top: -255%;
+        right: 0;
+    }
+
+    .heroCarousel-slide--5 .heroCarousel-description {
+        font-size: 36px !important;
+        line-height: 1.3;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #ffffff;
+        position: absolute;
+        top: -208%;
+        right: 0;
+    }
+
+    .heroCarousel-slide--5 .heroCarousel-content {
+        top: 440px;
+    }
+    */
+}
+
+.button--primary {
+    background-color: #7d451e;
+    border: 0px;
+}
+
+.heroCarousel-content {
+    background-color: rgba(128, 121, 115, 0);
+}
+
+.heroCarousel .slick-dots {
+    background-color: rgba(33, 30, 29, 0.7);
+    padding-bottom: 25px;
+    bottom: 0px;
+}
+
+.slick-dots li button {
+    border: 1px solid #bab1ad;
+}
+
+.slick-dots li button:hover::before {
+    background-color: transparent !important;
+    border: 2px solid #d49f72 !important;
+}
+
+.slick-dots li.slick-active button::before {
+    background-color: #d49f72 !important;
+}
+
+.heroCarousel.slick-initialized {
+    @media only screen and (max-width: 801px) {
+        height: auto;
+    }
+}
+
+// HEADER CAROUSEL ENDS
+// ----------------------------------------------------------------------------
+
+.form-label--alternate {
+    font-size: 16px;
+}
+
+b,
+optgroup,
+strong {
+    font-size: 19px;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    margin-top: 0px;
+}
+
+.button--small {
+    font-size: 14px !important;
+}
+
+// BEGIN Banner Section Under Carousel
+// ----------------------------------------------------------------------------
+
+.emthemesModez-bannersContainer--laparis2 {
+    display: none;
+}
+
+.emthemesModez-bannersContainer--laparis2
+    + .emthemesModez-bannersContainer--laparis3 {
+    margin-top: 2.25rem;
+}
+
+.emthemesModez-banner-figcaption-title {
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-title {
+    font-size: 75px;
+}
+
+hr {
+    display: block;
+    margin-top: 7pt;
+    margin-bottom: -12pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 45%;
+    color: #d49f72;
+}
+
+.emthemesModez-banner--laparis3 .emthemesModez-banner-figcaption-title strong {
+    font-size: 19px;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-title {
+    color: #fff;
+    border-bottom: 0px solid rgba(33, 30, 29, 0.7);
+}
+
+.emthemesModez-banner--laparis3 .emthemesModez-banner-figcaption-text {
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-text {
+    margin-bottom: 1.5em;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption {
+    background-color: rgba(33, 30, 29, 0.7);
+    border: 0px dotted white;
+    padding: 22px 15px 25px 15px;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption:hover {
+    background-color: rgba(33, 30, 29, 1);
+    transition: ease-in-out 0.5s;
+}
+
+.emthemesModez-banner-image {
+    transition: ease-in-out 20s;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-image:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    background-color: white;
+}
+
+.emthemesModez-banner.emthemesModez-banner--laparis3:first-child {
+    @media only screen and (min-width: 552px) and (max-width: 767px) {
+        position: initial;
+        width: 100%;
+        margin: 0;
+        display: flex;
+
+        .emthemesModez-banner-figure {
+            flex: 1;
+        }
+
+        .emthemesModez-banner-figcaption {
+            flex: 1;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-content: center;
+            align-items: center;
+
+            .emthemesModez-banner-figcaption-body {
+                margin: auto;
+            }
+        }
+    }
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-image:hover:after {
+    top: 50%;
+    bottom: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.emthemesModez-banner--laparis3:first-child .emthemesModez-banner-figcaption {
+    //Below 550px
+    @media only screen and (max-width: 767px) {
+        background-color: #4e4a46;
+        padding: 1rem 0 2rem;
+        margin-top: -2rem;
+    }
+
+    //Above 550px
+    @media only screen and (min-width: 767px) {
+        background-color: rgba(33, 30, 29, 0.7);
+        position: absolute;
+        bottom: -210px;
+        transition: all 0.4s ease-in-out 0s;
+        -ms-transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        width: 338px;
+        color: #ffffff;
+        padding-bottom: 30px;
+        padding-top: 15px;
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1250px) {
+        right: 0;
+        left: 0;
+        margin: 0 1rem;
+        padding: 2rem 0;
+        max-width: 90%;
+    }
+}
+
+.emthemesModez-banner--laparis3:first-child
+    .emthemesModez-banner-figcaption:hover {
+    @media only screen and (min-width: 1250px) {
+        background-color: rgba(33, 30, 29, 1);
+        position: absolute;
+        bottom: 0px;
+        transition: all 0.4s ease-in-out 0s;
+        -ms-transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        width: 338px;
+        color: #ffffff;
+    }
+}
+
+.emthemesModez-banner--laparis3:not(:first-child) {
+    @media only screen and (min-width: 552px) and (max-width: 767px) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.emthemesModez-banner--laparis3
+    + .emthemesModez-banner--laparis3
+    .emthemesModez-banner-figcaption {
+    background-color: #4e4a46;
+}
+
+.emthemesModez-banner--laparis3
+    + .emthemesModez-banner--laparis3
+    .emthemesModez-banner-figcaption:before {
+    color: #4e4a46;
+}
+
+.emthemesModez-banner--laparis3 .emthemesModez-banner-figcaption-title strong {
+    background-color: transparent;
+    border: 1px #bab1ad solid;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-button {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    margin-top: -3px;
+}
+
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-button:hover,
+.emthemesModez-banner--laparis2 .emthemesModez-banner-figcaption-button:active {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #d49f72;
+    transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    margin-top: -3px;
+}
+
+.emthemesModez-banner-figcaption-button:hover {
+    background-color: #211e1d;
+}
+
+// END Banner Section Under Carousel
+// ----------------------------------------------------------------------------
+
+.card-figcaption-body-bottomGroup .card-figcaption-button:hover {
+    opacity: 1 !important;
+}
+
+.card-figcaption-body-rightGroup .card-figcaption-button-icon {
+    font-size: 18px !important;
+    line-height: 1.2;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.9) !important ;
+    padding: 5px;
+    border: 0px;
+    border-radius: 2px;
+}
+
+.card-figcaption-body-rightGroup .card-figcaption-button-icon:hover {
+    opacity: 1 !important;
+}
+
+.card-figcaption-body-bottomGroup {
+    padding: 0.5rem;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.emthemesModez-brandCarousel-container {
+    display: none;
+}
+
+.emthemesModez-newsletterSection .form-input {
+    background-color: #ffffff;
+    color: #807973;
+}
+
+.emthemesModez-newsletterSection .button--primary {
+    background-color: #4e4a46;
+    border-color: #4e4a46;
+    color: #ffffff;
+}
+
+// PRODUCT SECTION BEGINS
+// ---------------------------------------------------------------------------------
+
+.emthemesModez-productBrandsTabs {
+    display: none;
+}
+
+.card-figure {
+    margin-top: 0;
+    border: 1px dotted #bab1ad;
+}
+
+.sale-flag-sash,
+.sale-flag-side,
+.sale-text-burst {
+    z-index: 6;
+}
+
+.card-text--brand {
+    display: none;
+}
+
+.productView-options
+    .form-option
+    span.form-option-variant.form-option-variant--pattern:before {
+    z-index: 0 !important;
+}
+
+// PRODUCT SECTION ENDS
+// ---------------------------------------------------------------------------------
+
+// BLOG SECTION
+// ---------------------------------------------------------------------------------
+
+.emthemesModez-blogGrid {
+    display: none;
+}
+
+// BLOG SECTION ENDS
+// ---------------------------------------------------------------------------------
+
+// FOOTER BEGIN
+// ---------------------------------------------------------------------------------
+
+.emthemesModez-newsletterForm .footer-info-heading {
+    font-size: 28px;
+}
+
+.emthemesModez-newsletterForm .form {
+    width: 90%;
+    margin-left: 1em !important;
+}
+
+.footer-info-list a {
+    color: #dbd4ce;
+}
+
+.footer-info-list a:focus,
+.footer-info-list a:hover {
+    color: #d49f72;
+}
+
+.footer-payment-icons svg {
+    fill: #807973;
+}
+
+.footer-copyright a:hover {
+    color: #d49f72;
+}
+
+.footer-logo {
+    background: url("/product_images/uploaded_images/urbanforge-footer-logo.png")
+        no-repeat !important;
+}
+
+.socialLinks .icon svg {
+    fill: #807973;
+}
+
+.socialLinks .icon svg:hover {
+    fill: #d49f72;
+}
+
+.footer-copyright > .powered-by {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 44px;
+}
+
+@media (min-width: 801px) {
+    .footer-info-col {
+        width: 23.33333%;
+    }
+}
+
+// ---------------------------------------------------------------------------------
+// FOOTER END
+
+// _string.scss
+// ---------------------------------------------------------------------------------
+
+// http://sassmeister.com/gist/1b4f2da5527830088e4d
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace +
+            str-replace(
+                str-slice($string, $index + str-length($search)),
+                $search,
+                $replace
+            );
+    }
+
+    @return $string;
+}
+
+// https://stackoverflow.com/questions/32376461/how-to-split-a-string-into-two-lists-of-numbers-in-sass
+///
+/// Split `$string` into a list of two strings at the first occurrence of `$separator`.
+///
+/// @param {String} $string - The string to be split
+/// @param {String} $separator - Character indicating where the split should occur
+///
+/// @return {List} - A list of the two created strings. The second string will be null if `$separator` is not found.
+///
+@function str-split($string, $separator) {
+    $index: str-index($string, $separator);
+
+    @if not $index {
+        @return $string "";
+    }
+
+    $str-1: str-slice($string, 1, $index - 1);
+    $str-2: str-slice($string, $index + 1);
+
+    @return $str-1 $str-2;
+}
+
+// https://www.sassmeister.com/gist/9fa19d254864f33d4a80
+///
+/// Converts a String representation of a number into a Number
+///
+/// @param {String} $value - The String to be converted
+///
+/// @return {Number} - The converted Number
+///
+@function to-number($value) {
+    @if type-of($value) == "number" {
+        @return $value;
+    } @else if type-of($value) != "string" {
+        $_: log("Value for `to-number` should be a number or a string.");
+    }
+
+    $result: 0;
+    $digits: 0;
+    $minus: str-slice($value, 1, 1) == "-";
+    $numbers: (
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9
+    );
+
+    @for $i from if($minus, 2, 1) through str-length($value) {
+        $character: str-slice($value, $i, $i);
+
+        @if not(index(map-keys($numbers), $character) or $character == ".") {
+            @return to-length(
+                if($minus, -$result, $result),
+                str-slice($value, $i)
+            );
+        }
+
+        @if $character == "." {
+            $digits: 1;
+        } @else if $digits == 0 {
+            $result: $result * 10 + map-get($numbers, $character);
+        } @else {
+            $digits: $digits * 10;
+            $result: $result + map-get($numbers, $character) / $digits;
+        }
+    }
+
+    @return if($minus, -$result, $result);
+}
+
+///
+/// Add `$unit` to `$value`
+///
+/// @param {Number} $value - Value to add unit to
+/// @param {String} $unit - String representation of the unit
+///
+/// @return {Number} - `$value` expressed in `$unit`
+///
+@function to-length($value, $unit) {
+    $units: (
+        "px": 1px,
+        "cm": 1cm,
+        "mm": 1mm,
+        "%": 1%,
+        "ch": 1ch,
+        "pc": 1pc,
+        "in": 1in,
+        "em": 1em,
+        "rem": 1rem,
+        "pt": 1pt,
+        "ex": 1ex,
+        "vw": 1vw,
+        "vh": 1vh,
+        "vmin": 1vmin,
+        "vmax": 1vmax
+    );
+
+    @if not index(map-keys($units), $unit) {
+        $_: log("Invalid unit `#{$unit}`.");
+    }
+
+    @return $value * map-get($units, $unit);
+}
+
+// _image.scss
+// ---------------------------------------------------------------------------------
+
+///
+/// Calculate the required `padding-bottom` value to reserve page space for an image of a given size, represented by `$size`.
+///
+/// @param {String} $size - A string of the form 'XxY', where 'X' and 'Y' are integers.
+///
+/// @return {Number} - A percentage indicating the appropriate value of `padding-bottom`.
+///
+@function get-padding($size) {
+    $list: str-split($size, "x");
+
+    $width: to-number(nth($list, 1));
+    $height: to-number(nth($list, 2));
+
+    @return percentage($height/$width);
+}
+
+///
+/// Returns a string representing the width (in pixels) of an image with size `$size`.
+///
+/// @param {String} $size - A string of the form 'XxY', where 'X' and 'Y' are integers.
+///
+/// @return {String} - A string of the form 'Xpx'
+///
+@function get-width($size) {
+    $list: str-split($size, "x");
+
+    @return nth($list, 1) + "px";
+}
+
+///
+/// Returns a string representing the width (in pixels) of an image with size `$size`.
+///
+/// @param {String} $size - A string of the form 'XxY', where 'X' and 'Y' are integers.
+///
+/// @return {String} - A string of the form 'Ypx'
+///
+@function get-height($size) {
+    $list: str-split($size, "x");
+
+    @return nth($list, 2) + "px";
+}
+
+// _productUniform.scss
+// ---------------------------------------------------------------------------------
+
+.emthemesModez-productUniform {
+    .card-figure {
+        > a {
+            max-width: get-width(stencilString("productgallery_size"));
+            text-align: center;
+
+            &:after {
+                content: "";
+                display: block;
+                height: 0;
+                width: 100%;
+                padding-bottom: get-padding(
+                    stencilString("productgallery_size")
+                );
+            }
+        }
+    }
+
+    .card-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-height: 100%;
+    }
+
+    .brandGrid {
+        .card-figure {
+            > a {
+                max-width: get-width(stencilString("brand_size"));
+
+                &:after {
+                    padding-bottom: get-padding(stencilString("brand_size"));
+                }
+            }
+        }
+    }
+}
+
+/* =================================================== */
+/*                Customization header                 */
+/* =================================================== */
+.header {
+    background: transparent;
+    border: 0;
+}
+
+.emthemesModez-header-topSection {
+    border: 0;
+    ul {
+        height: 40px;
+        li {
+            flex: 0 0 auto;
+            border: 0;
+            text-align: left;
+            font-size: remCalc(15);
+            color: #fdf9f9;
+            font-weight: 400;
+            font-style: italic;
+            padding: spacing("third") spacing("half");
+        }
+    }
+    .container {
+        max-width: 100%;
+    }
+}
+
+.emthemesModez-header-userSection {
+    background: rgba($header-bg, $alpha: 0.95);
+}
+
+.emthemesModez-header-userSection {
+    padding: 0;
+}
+
+.header-logo {
+    margin: 0;
+    text-align: left;
+    padding: 0 spacing("single");
+    height: remCalc(80);
+    min-width: 20%;
+    max-width: 80%;
+    flex: 1 1 0;
+    > a {
+        width: auto;
+    }
+}
+
+.header-logo-image {
+    max-height: remCalc(60);
+}
+
+.mobileMenu-toggle {
+    left: auto;
+    top: remCalc($header-height);
+    right: 0;
+}
+
+.navPages-container {
+    height: calc(100% - 124px);
+    border: 0;
+    &.is-open {
+        padding-top: 0;
+    }
+}
+
+.navPages {
+    background: rgba(78,71,69,0.95);
+}
+
+.navPages-list + .navPages-list {
+    border-top-color: #d49f72;
+}
+
+.navPages-action {
+    padding: 0 spacing("third");
+    font-size: 0.92rem;
+}
+
+.navPages-action svg {
+    fill: #d49f72;
+    stroke: #d49f72;
+}
+
+.navUser--right {
+    background: #807973;
+    position: static;
+    transform: none;
+    .navUser-section {
+        display: flex;
+        align-items: center;
+        float: none;
+    }
+    .navUser-item {
+        display: block;
+        flex: 0 0 auto;
+    }
+    .navUser-item--contact {
+        flex: 1 1 0;
+    }
+    .navUser-action {
+        padding: remCalc(10) spacing("half");
+    }
+    .navUser-action-locationLabel, .navUser-item-searchLabel, .navUser-item-cartLabel, .navUser-item-loginLabel {
+        display: none;
+    }
+    .navUser-action--contact {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+}
+
+@include breakpoint("medium") {
+    body {
+        padding-top: remCalc(140);
+        margin-top: 0;
+        &.page-default {
+            padding-top: remCalc(40);
+        }
+    }
+    .header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .navPages-container {
+        background: transparent;
+        position: static;
+        height: auto;
+        .navPages-item {
+            > .navPages-action {
+                display: flex;
+                align-items: center;
+            }
+            &:hover {
+                > .navPages-action {
+                    background-color: stencilColor("navPages-subMenu-backgroundColor");
+                }
+                > .navPage-subMenu {
+                    display: block;
+                    width: 100%;
+                    left: 0;
+                    z-index: zIndex("highest");
+                }
+            }
+
+        }
+    }
+    .navPages {
+        background: transparent;
+    }
+    .emthemesModez-header-userSection--logo-left {
+        .navPages-container {
+            order: 2;
+        }
+    }
+    .navUser--right {
+        position: absolute;
+        top: 0;
+        right: spacing("single");
+        .navUser-section {
+            height: 40px;
+        }
+        .navUser-action {
+            padding: spacing("third") spacing("half");
+        }
+        .navUser-item:first-child {
+            .navUser-action {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .navPage-subMenu-item {
+        > .navPage-subMenu-action {
+            font-size: .99rem;
+            color: #d49f72;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: .5;
+            margin-bottom: 0;
+            border: 0;
+            background-color: transparent;
+            padding-top: 2rem!important;
+        }
+        .navPage-childList-action {
+            margin-top: spacing("third");
+        }
+    }
+}
+@include breakpoint("large") {
+    .navPages-container {
+        .navPages-item {
+            > .navPages-action {
+                height: remCalc(100);
+            }
+        }
+    }
+    .navUser--right {
+        .navUser-action-locationLabel, .navUser-item-searchLabel, .navUser-item-cartLabel, .navUser-item-loginLabel {
+            display: inline-block;
+        }
+    }
+    .emthemesModez-header-userSection {
+        padding: 0 8%;
+    }
+    .emthemesModez-header-topSection {
+        .container {
+            padding: 0 8%;
+        }
+    }
+    .navUser--right {
+        right: 8%;
+    }
+}
+
+
+@media (max-width:801px) {
+    body > div.body > div.container > div > aside {display:none!important;}
+}
