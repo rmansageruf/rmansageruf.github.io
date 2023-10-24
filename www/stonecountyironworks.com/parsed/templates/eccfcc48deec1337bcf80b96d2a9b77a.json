@@ -1,1 +1,0 @@
-{"components/common/body-classes":"{{#if theme_settings.global-crop-cover-images}}thumbnail-cover{{/if}}\n{{#if theme_settings.collections-sidebar-hidden}}no-sidebar{{/if}}\n{{#unless in_production}} dev-environment{{/unless}}\n"}
